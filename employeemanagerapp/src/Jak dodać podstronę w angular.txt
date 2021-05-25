@@ -1,0 +1,33 @@
+1. stworzenie aplikacji z routingiem:
+ng nazwa_aplikacji --routing
+
+Albo
+
+Dodać plik app-routing.module.ts
+------------------------------------------------------
+import {RouterModule, Routes} from "@angular/router";
+import {NgModule} from "@angular/core";
+
+
+const routes: Routes = [];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }
+------------------------------------------------------
+
+Oraz dodać do app-module.ts
+------------------------------------------------------
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    FormsModule,
+    AppRoutingModule
+  ],
+------------------------------------------------------
+
+2. Dodanie komponentu:
+ng g c nazwa_komponentu -it -is
+
