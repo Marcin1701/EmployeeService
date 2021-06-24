@@ -1,0 +1,12 @@
+
+.idea/
+
+target/classes/application-personal_credentials.properties
+
+angularspringboot.iml
+
+target/classes/
+
+target/test-classes/pl/angular/springboot/angularspringboot/AngularspringbootApplicationTests.class
+
+src/main/resources/application-personal_credentials.properties
